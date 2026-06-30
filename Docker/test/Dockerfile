@@ -1,3 +1,12 @@
-FROM devopsdockeruh/simple-web-service:alpine
+FROM ubuntu:24.04
 
-CMD ["server"]
+WORKDIR /usr/src/app  
+
+RUN apt-get update && \
+    apt-get install -y curl
+
+COPY script.sh .  
+
+RUN chmod +x script.sh
+
+CMD ["./script.sh"]
