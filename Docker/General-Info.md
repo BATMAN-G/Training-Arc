@@ -11,7 +11,9 @@ The Docker client passes the `docker run` command to the Docker daemon through a
 Docker images built with Dockerfiles which is consist of several parts first the `FROM` and it specifies the base layer of the image, the we have the `WORKDIR` which specifies the working directory, and we have `RUN` and `CMD`
 both used to run commands but `RUN` is used for running commands while building the image while `CMD` is used only once per Dockerfile to execute the initial execution of the image.
 
-# When running a dockerfile that has a `CMD` in it and trying to write an argument in the run command it will overwrite the command in the `CMD`
+# How does `CMD` Wroks in Dockerfiles?
+
+When running a dockerfile that has a `CMD` in it and trying to write an argument in the run command it will overwrite the command in the `CMD`
 
 
 # How does `ENTRYPOINT` works in Dockerfiles?
