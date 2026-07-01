@@ -12,3 +12,8 @@ Docker images built with Dockerfiles which is consist of several parts first the
 both used to run commands but `RUN` is used for running commands while building the image while `CMD` is used only once per Dockerfile to execute the initial execution of the image.
 
 # When running a dockerfile that has a `CMD` in it and trying to write an argument in the run command it will overwrite the command in the `CMD`
+
+
+# How does `ENTRYPOINT` works in Dockerfiles?
+
+`ENTRYPOINT` defines the main executable that always runs when a container starts.So when you have `ENTRYPOINT` and `CMD` ,`ENTRYPOINT` will work first and then the `CMD`.
